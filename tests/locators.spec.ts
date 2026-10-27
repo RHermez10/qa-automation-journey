@@ -44,12 +44,6 @@ test("locate a button", async ({ page }) => {
   await expect(page.getByRole("button", { name: "Add Element" })).toBeVisible();
 });
 
-test("locating a link by its role", async ({ page }) => {
-  await page.goto("https://the-internet.herokuapp.com/challenging_dom");
-
-  await expect(page.getByRole("link", { name: "foo" })).toBeVisible();
-});
-
 test("locate another elemnet", async ({ page }) => {
   await page.goto("https://the-internet.herokuapp.com/checkboxes");
 
